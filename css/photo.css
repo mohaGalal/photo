@@ -1,0 +1,143 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  background-color: #fffdfb;
+}
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+/* @media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+} */
+.head {
+  display: flex;
+}
+@media (max-width: 920px) {
+  .head {
+    flex-direction: column;
+  }
+}
+.head h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  flex-basis: 50%;
+  margin-right: 20px;
+}
+
+.head div {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-basis: 50%;
+}
+.head p {
+  line-height: 1.6;
+  color: #333;
+}
+.head button {
+  cursor: pointer;
+  padding: 13px 35px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  background-color: #b5823e;
+  transition: 1.5s;
+  transition-delay: 0.3s;
+}
+.head button:hover {
+  font-weight: bold;
+  background-color: #586fd5;
+  transform: translatey(5px);
+  letter-spacing: 1px;
+}
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 100px;
+  max-width: 100%;
+}
+.pho-gr-1,
+.pho-gr-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+@media (max-width: 920px) {
+  .photos,
+  .pho-gr-1,
+  .pho-gr-2 {
+    display: block;
+  }
+  .pho-2 img,
+  .pho-3 img,
+  .pho-5 img,
+  .pho-6 img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .pho-1 img,
+  .pho-4 img,
+  .pho-7 img {
+    margin-bottom: 13px;
+  }
+}
+.pho-4,
+.pho-7 {
+  grid-row-start: 2;
+  grid-column-end: span 2;
+}
+img {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+.footer {
+  margin-top: 100px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.footer .social {
+  position: absolute;
+  right: 0;
+}
+.footer .social i {
+  padding-right: 35px;
+  font-size: 22px;
+  color: #212183;
+}
+.footer p:first-child {
+  padding-bottom: 10px;
+}
+@media (max-width: 920px) {
+  .footer {
+    margin-bottom: 120px;
+  }
+  .footer .social {
+    left: 0;
+    margin-top: 10px;
+  }
+  .footer p:last-child {
+    position: absolute;
+    margin-top: 50px;
+  }
+}
